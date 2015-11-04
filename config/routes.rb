@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :articles
-  root "articles#index"
+  
+  root to: "articles#index", as: :g_root
   
 end
